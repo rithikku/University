@@ -1,0 +1,8 @@
+{
+  "courses": [
+    { "name": "B.Tech", "duration": "4 Years", "specialization": "CSE, ECE, ME" },
+    { "name": "MBA", "duration": "2 Years", "specialization": "Finance, HR, Marketing" },
+    { "name": "BCA", "duration": "3 Years", "specialization": "Computer Science" },
+    { "name": "BBA", "duration": "3 Years", "specialization": "Business Management" }
+  ]
+}

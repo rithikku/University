@@ -1,0 +1,134 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background: #f8f9fc;
+  color: #333;
+}
+
+.navbar {
+  background: #004aad;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.navbar a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: linear-gradient(to right, #004aad, #0077ff);
+  color: white;
+}
+
+.cta-buttons button {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: white;
+  color: #004aad;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.info-section {
+  padding: 2rem;
+  background: white;
+  margin: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.form-section {
+  background: #eef3ff;
+  padding: 2rem;
+  margin: 2rem;
+  border-radius: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: auto;
+}
+
+form input, select, button {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background: #004aad;
+  color: white;
+  border: none;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+  margin: 10% auto;
+  text-align: left;
+}
+
+.close {
+  float: right;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+footer {
+  text-align: center;
+  background: #004aad;
+  color: white;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+#courses {
+  list-style: none;
+  align-items: center;
+  text-align: center;
+}
+
+#courses > ul {
+  list-style: none;
+}
+
+#about{
+  align-items: center;
+  text-align: center;
+}
+
+#apply {
+  text-align: center;
+}
+
+/* For second LP color variant */
+.purple { background: #6a0dad !important; }
+.purple-bg { background: linear-gradient(to right, #6a0dad, #b14cff) !important; }
+
+@media (max-width: 768px) {
+  .navbar { flex-direction: column; }
+  form { width: 100%; }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>United Institute of Management</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <h1>United Institute of Management</h1>
+    <nav>
+      <a href="#about">Overview</a>
+      <a href="#courses">Courses</a>
+      <a href="#apply">Apply Now</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Empowering Tomorrow’s Innovators</h2>
+    <p>Top-ranked private university offering Engineering, Management, and IT programs.</p>
+    <div class="cta-buttons">
+      <a href="https://www.unitedmedicity.com/add-pdf/Documents-Required-&-Fee-Details.pdf" download><button>💸 Check Course-wise Fees</button></a>
+      
+      <a href="https://united.ac.in/public/home/upload/Brochure-2024.pdf" download><button>📄 Download Brochure</button></a>
+      <a href="#apply"><button>📝 Apply Now</button></a>
+    </div>
+  </section>
+
+  <section id="about" class="info-section">
+    <h3>About United</h3>
+    <p>United Institute of Management provides global-standard education with top placements and research-driven learning. Accredited and ranked among India’s best private institutions.</p>
+  </section>
+
+  <section id="courses" class="info-section">
+    <h3>Our Courses</h3>
+    <ul id="courseList"></ul>
+  </section>
+
+  <section id="apply" class="form-section">
+    <h3>Apply for Admission</h3>
+    <form id="leadForm">
+      <input name="fullName" placeholder="Full Name" required />
+      <input name="email" type="email" placeholder="Email" required />
+      <input name="phone" type="tel" maxlength="10" pattern="[0-9]{10}" placeholder="Phone Number" required />
+      <input name="state" placeholder="State" />
+      <input name="course" placeholder="Course Interested" />
+      <select name="intakeYear">
+        <option>2025</option>
+        <option>2026</option>
+      </select>
+      <label><input type="checkbox" required /> I agree to be contacted.</label>
+      <button type="submit">Submit</button>
+    </form>
+    <p id="responseMsg"></p>
+  </section>
+
+  <!-- Modal -->
+  <div id="feesModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h3>Course-wise Fee Structure</h3>
+      <div id="feesModalBody"></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 United Institute of Management | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
